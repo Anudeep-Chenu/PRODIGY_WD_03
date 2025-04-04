@@ -38,3 +38,20 @@ sbox.forEach(box => {
         statusText.textContent = `Player ${Playern}'s Turn`;
     });
 });
+
+function checkWinner() {
+    return winCombs.some(comb => {
+        return comb.every(index => boardState[index] === Playern);
+    });
+}
+
+resetBtn.addEventListener("click", () => {
+    boardState = ["", "", "", "", "", "", "", "", ""];
+    gameActive = true;
+    Playern = "X";
+    statusText.textContent = `Player X's Turn`;
+    sbox.forEach(box => {
+        box.textContent = "";
+        box.disabled = false;
+    });
+});
