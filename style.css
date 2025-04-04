@@ -58,5 +58,21 @@ h1 {
     font-weight: bol̀d;
     color: #555;
 }
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background-color: #fb6257;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #8cfc97;
+}
 
 
